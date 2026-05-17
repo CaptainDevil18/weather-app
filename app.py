@@ -14,7 +14,7 @@ def weather():
         city_name = "Pune"
         
         
-    url = f"https://api.weatherbit.io/v2.0/current?&city={city_name}&country=IN&key={API_KEY}&include=minutely"
+    url = f"https://api.weatherbit.io/v2.0/current?&city={city_name}&country=IN,US,AU,CN&key={API_KEY}&include=minutely"
     
     response = requests.get(url)
     
