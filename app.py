@@ -11,7 +11,7 @@ def weather():
     if request.method == 'POST':
         city_name = request.form.get('city').title()
     else:
-        city_name = "Pune"
+        city_name = "New York"
         
         
     url = f"https://api.weatherbit.io/v2.0/current?&city={city_name}&country=IN&key={API_KEY}&include=minutely"
